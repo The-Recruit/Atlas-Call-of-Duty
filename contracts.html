@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contracts — ATLAS Corporation</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:wght@300;400;600;700;900&family=Rajdhani:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="scan-overlay"></div>
+<div class="noise-overlay"></div>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="logo-wrap">
+      <img src="atlas-logo.png" alt="ATLAS Corporation" class="site-logo">
+      <div class="logo-text">
+        <span class="logo-name">ATLAS</span>
+        <span class="logo-sub">CORPORATION</span>
+      </div>
+    </a>
+    <nav class="main-nav">
+      <a href="index.html" class="nav-link">HOME</a>
+      <a href="about.html" class="nav-link">ABOUT</a>
+      <a href="services.html" class="nav-link">SERVICES</a>
+      <a href="operations.html" class="nav-link">OPERATIONS</a>
+      <a href="contracts.html" class="nav-link active">CONTRACTS</a>
+      <a href="contact.html" class="nav-link nav-cta">ENGAGE</a>
+    </nav>
+    <button class="mobile-menu-btn" onclick="toggleMenu()">&#9776;</button>
+  </div>
+  <div class="mobile-nav" id="mobileNav">
+    <a href="index.html" class="nav-link">HOME</a>
+    <a href="about.html" class="nav-link">ABOUT</a>
+    <a href="services.html" class="nav-link">SERVICES</a>
+    <a href="operations.html" class="nav-link">OPERATIONS</a>
+    <a href="contracts.html" class="nav-link">CONTRACTS</a>
+    <a href="contact.html" class="nav-link">ENGAGE</a>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero">
+    <div class="page-hero-inner">
+      <div class="page-hero-tag">// TRACK RECORD</div>
+      <h1 class="page-hero-title">SUCCESSFUL<br>CONTRACTS</h1>
+      <p class="page-hero-sub">A declassified summary of ATLAS Corporation's contracted engagements across all service domains. 312 contracts. 97% success rate.</p>
+    </div>
+  </section>
+
+  <!-- SUMMARY STATS -->
+  <section style="background: var(--grey-dark); padding: 60px 0; border-bottom: 1px solid #2a2a2a;">
+    <div class="container">
+      <div style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 1px; background: #2a2a2a;">
+        <div style="background: #000; padding: 32px 24px; text-align: center;">
+          <div style="font-family: 'Bebas Neue', sans-serif; font-size: 52px; color: #fff;">312</div>
+          <div style="font-family: 'Barlow Condensed', sans-serif; font-size: 11px; letter-spacing: 0.3em; color: #cc0000; font-weight: 700;">TOTAL CONTRACTS</div>
+        </div>
+        <div style="background: #000; padding: 32px 24px; text-align: center;">
+          <div style="font-family: 'Bebas Neue', sans-serif; font-size: 52px; color: #fff;">97%</div>
+          <div style="font-family: 'Barlow Condensed', sans-serif; font-size: 11px; letter-spacing: 0.3em; color: #cc0000; font-weight: 700;">SUCCESS RATE</div>
+        </div>
+        <div style="background: #000; padding: 32px 24px; text-align: center;">
+          <div style="font-family: 'Bebas Neue', sans-serif; font-size: 52px; color: #fff;">49</div>
+          <div style="font-family: 'Barlow Condensed', sans-serif; font-size: 11px; letter-spacing: 0.3em; color: #cc0000; font-weight: 700;">CLIENT NATIONS</div>
+        </div>
+        <div style="background: #000; padding: 32px 24px; text-align: center;">
+          <div style="font-family: 'Bebas Neue', sans-serif; font-size: 52px; color: #fff;">$4.2T</div>
+          <div style="font-family: 'Barlow Condensed', sans-serif; font-size: 11px; letter-spacing: 0.3em; color: #cc0000; font-weight: 700;">TOTAL CONTRACT VALUE</div>
+        </div>
+        <div style="background: #000; padding: 32px 24px; text-align: center;">
+          <div style="font-family: 'Bebas Neue', sans-serif; font-size: 52px; color: #fff;">19</div>
+          <div style="font-family: 'Barlow Condensed', sans-serif; font-size: 11px; letter-spacing: 0.3em; color: #cc0000; font-weight: 700;">YEARS ACTIVE</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <div class="container">
+      <div class="section-tag">// CONTRACT REGISTER — DECLASSIFIED ENTRIES</div>
+      <h2 class="section-title" style="margin-bottom: 8px;">CONTRACT DATABASE</h2>
+      <p style="margin-bottom: 40px;">Selected entries from the ATLAS contract register. Classified contracts are shown with redacted details. All values in USD.</p>
+
+      <!-- FILTER BAR -->
+      <div style="display: flex; gap: 8px; margin-bottom: 32px; flex-wrap: wrap;">
+        <button class="filter-btn active" onclick="filterContracts('all')" style="font-family: 'Barlow Condensed', sans-serif; font-size: 12px; font-weight: 700; letter-spacing: 0.2em; padding: 8px 18px; background: #cc0000; color: #fff; border: 1px solid #cc0000; cursor: pointer;">ALL</button>
+        <button class="filter-btn" onclick="filterContracts('active')" style="font-family: 'Barlow Condensed', sans-serif; font-size: 12px; font-weight: 700; letter-spacing: 0.2em; padding: 8px 18px; background: transparent; color: #888; border: 1px solid #2a2a2a; cursor: pointer;">ACTIVE</button>
+        <button class="filter-btn" onclick="filterContracts('completed')" style="font-family: 'Barlow Condensed', sans-serif; font-size: 12px; font-weight: 700; letter-spacing: 0.2em; padding: 8px 18px; background: transparent; color: #888; border: 1px solid #2a2a2a; cursor: pointer;">COMPLETED</button>
+        <button class="filter-btn" onclick="filterContracts('classified')" style="font-family: 'Barlow Condensed', sans-serif; font-size: 12px; font-weight: 700; letter-spacing: 0.2em; padding: 8px 18px; background: transparent; color: #888; border: 1px solid #2a2a2a; cursor: pointer;">CLASSIFIED</button>
+      </div>
+
+      <div class="contracts-table-wrap">
+        <table class="contracts-table" id="contractsTable">
+          <thead>
+            <tr>
+              <th>CONTRACT ID</th>
+              <th>DESIGNATION</th>
+              <th>REGION</th>
+              <th>SERVICE TYPE</th>
+              <th>VALUE</th>
+              <th>DURATION</th>
+              <th>STATUS</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr data-status="completed">
+              <td style="font-family: 'Barlow Condensed', sans-serif; letter-spacing: 0.1em;">ATL-0019</td>
+              <td style="color: #fff; font-weight: 600;">Iron Dawn — West Africa</td>
+              <td>West Africa</td>
+              <td>PMC / Counter-insurgency</td>
+              <td class="contract-value">$18.4B</td>
+              <td>14 months</td>
+              <td><span class="contract-status completed">COMPLETED</span></td>
+            </tr>
+            <tr data-status="active">
+              <td style="font-family: 'Barlow Condensed', sans-serif; letter-spacing: 0.1em;">ATL-0301</td>
+              <td style="color: #fff; font-weight: 600;">Steel Meridian — Iraq/Syria</td>
+              <td>Middle East</td>
+              <td>Infrastructure / Force Protection</td>
+              <td class="contract-value">$64.2B</td>
+              <td>36 months (ongoing)</td>
+              <td><span class="contract-status active">ACTIVE</span></td>
+            </tr>
+            <tr data-status="completed">
+              <td style="font-family: 'Barlow Condensed', sans-serif; letter-spacing: 0.1em;">ATL-0088</td>
+              <td style="color: #fff; font-weight: 600;">Ghost Protocol — Eastern Europe</td>
+              <td>Eastern Europe</td>
+              <td>Intelligence / Counter-espionage</td>
+              <td class="contract-value">$4.1B</td>
+              <td>8 months</td>
+              <td><span class="contract-status completed">COMPLETED</span></td>
+            </tr>
+            <tr data-status="active">
+              <td style="font-family: 'Barlow Condensed', sans-serif; letter-spacing: 0.1em;">ATL-0298</td>
+              <td style="color: #fff; font-weight: 600;">Titan Bridge — Southeast Asia</td>
+              <td>Southeast Asia</td>
+              <td>Infrastructure / Logistics</td>
+              <td class="contract-value">$41.8B</td>
+              <td>24 months (ongoing)</td>
+              <td><span class="contract-status active">ACTIVE</span></td>
+            </tr>
+            <tr data-status="completed">
+              <td style="font-family: 'Barlow Condensed', sans-serif; letter-spacing: 0.1em;">ATL-0141</td>
+              <td style="color: #fff; font-weight: 600;">Red Horizon — Colombia/Peru</td>
+              <td>South America</td>
+              <td>PMC / Infrastructure Protection</td>
+              <td class="contract-value">$9.7B</td>
+              <td>22 months</td>
+              <td><span class="contract-status completed">COMPLETED</span></td>
+            </tr>
+            <tr data-status="classified">
+              <td style="font-family: 'Barlow Condensed', sans-serif; letter-spacing: 0.1em;">ATL-[REDACTED]</td>
+              <td style="color: #fff; font-weight: 600;">[CLASSIFIED OPERATION]</td>
+              <td>[CLASSIFIED]</td>
+              <td>[CLASSIFIED]</td>
+              <td class="contract-value">$[REDACTED]</td>
+              <td>[CLASSIFIED]</td>
+              <td><span class="contract-status classified">CLASSIFIED</span></td>
+            </tr>
+            <tr data-status="completed">
+              <td style="font-family: 'Barlow Condensed', sans-serif; letter-spacing: 0.1em;">ATL-0057</td>
+              <td style="color: #fff; font-weight: 600;">Desert Forge — Saudi Arabia</td>
+              <td>Gulf Region</td>
+              <td>Military Base Construction</td>
+              <td class="contract-value">$28.3B</td>
+              <td>18 months</td>
+              <td><span class="contract-status completed">COMPLETED</span></td>
+            </tr>
+            <tr data-status="completed">
+              <td style="font-family: 'Barlow Condensed', sans-serif; letter-spacing: 0.1em;">ATL-0112</td>
+              <td style="color: #fff; font-weight: 600;">Arctic Shield — Norway/Scandinavia</td>
+              <td>Northern Europe</td>
+              <td>Force Protection / Intelligence</td>
+              <td class="contract-value">$6.2B</td>
+              <td>12 months</td>
+              <td><span class="contract-status completed">COMPLETED</span></td>
+            </tr>
+            <tr data-status="active">
+              <td style="font-family: 'Barlow Condensed', sans-serif; letter-spacing: 0.1em;">ATL-0309</td>
+              <td style="color: #fff; font-weight: 600;">Phoenix Grid — Sub-Saharan Africa</td>
+              <td>Central Africa</td>
+              <td>Infrastructure / Power Grid</td>
+              <td class="contract-value">$22.1B</td>
+              <td>30 months (ongoing)</td>
+              <td><span class="contract-status active">ACTIVE</span></td>
+            </tr>
+            <tr data-status="classified">
+              <td style="font-family: 'Barlow Condensed', sans-serif; letter-spacing: 0.1em;">ATL-[REDACTED]</td>
+              <td style="color: #fff; font-weight: 600;">[CLASSIFIED OPERATION]</td>
+              <td>[CLASSIFIED]</td>
+              <td>[CLASSIFIED]</td>
+              <td class="contract-value">$[REDACTED]</td>
+              <td>[CLASSIFIED]</td>
+              <td><span class="contract-status classified">CLASSIFIED</span></td>
+            </tr>
+            <tr data-status="completed">
+              <td style="font-family: 'Barlow Condensed', sans-serif; letter-spacing: 0.1em;">ATL-0003</td>
+              <td style="color: #fff; font-weight: 600;">First Light — Nigeria</td>
+              <td>West Africa</td>
+              <td>PMC / VIP Protection</td>
+              <td class="contract-value">$2.8B</td>
+              <td>6 months</td>
+              <td><span class="contract-status completed">COMPLETED</span></td>
+            </tr>
+            <tr data-status="completed">
+              <td style="font-family: 'Barlow Condensed', sans-serif; letter-spacing: 0.1em;">ATL-0204</td>
+              <td style="color: #fff; font-weight: 600;">Indus Reconstruction — Pakistan</td>
+              <td>South Asia</td>
+              <td>Infrastructure / Disaster Recovery</td>
+              <td class="contract-value">$14.5B</td>
+              <td>20 months</td>
+              <td><span class="contract-status completed">COMPLETED</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p style="margin-top: 24px; font-size: 13px; font-family: 'Barlow Condensed', sans-serif; letter-spacing: 0.15em; color: #555;">SHOWING 12 OF 312 REGISTERED CONTRACTS. FULL DATABASE ACCESS REQUIRES TIER 3 CLEARANCE.</p>
+    </div>
+  </section>
+
+  <!-- CLIENT TYPES -->
+  <section class="content-section dark">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">// WHO WE WORK WITH</div>
+        <h2 class="section-title">CLIENT CATEGORIES</h2>
+      </div>
+      <div class="services-grid" style="margin-top: 40px;">
+        <div class="service-card">
+          <div class="service-icon">⬡</div>
+          <h3>SOVEREIGN GOVERNMENTS</h3>
+          <p>National governments contracting ATLAS for military capability augmentation, border security, and strategic infrastructure development where national capacity is insufficient.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">⬡</div>
+          <h3>INTERNATIONAL BODIES</h3>
+          <p>UN agencies, regional alliances, and multilateral organizations requiring rapid-deployment security and reconstruction capabilities beyond traditional peacekeeping scope.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">⬡</div>
+          <h3>ENERGY CORPORATIONS</h3>
+          <p>Global energy companies requiring pipeline protection, offshore platform security, and infrastructure construction in high-risk operational environments.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">⬡</div>
+          <h3>PRIVATE ENTITIES</h3>
+          <p>Qualified private entities with legitimate security, intelligence, and infrastructure requirements operating in conflict-adjacent environments worldwide.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="atlas-logo.png" alt="ATLAS" class="footer-logo">
+        <p>ATLAS Corporation — Private Military & Infrastructure Conglomerate</p>
+        <p class="footer-classify">CLASSIFICATION: RESTRICTED</p>
+      </div>
+      <div class="footer-links">
+        <h4>NAVIGATION</h4>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="operations.html">Operations</a>
+        <a href="contracts.html">Contracts</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-links">
+        <h4>SERVICES</h4>
+        <a href="services.html#pmc">Private Military</a>
+        <a href="services.html#infrastructure">Infrastructure</a>
+        <a href="services.html#intelligence">Intelligence</a>
+        <a href="services.html#logistics">Logistics</a>
+      </div>
+      <div class="footer-contact">
+        <h4>CONTACT</h4>
+        <p>ATLAS HQ — New Baghdad, Iraq</p>
+        <p>ops@atlascorporation.mil</p>
+        <p>SECURE LINE: +1-800-ATLAS-00</p>
+      </div>
+    </div>
+    <div class="footer-bar">
+      <span>© 2054 ATLAS Corporation. All operations classified. All rights reserved.</span>
+      <span class="footer-right">STRENGTH · ORDER · SUPERIORITY</span>
+    </div>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+<script>
+function filterContracts(status) {
+  const rows = document.querySelectorAll('#contractsTable tbody tr');
+  rows.forEach(row => {
+    if (status === 'all' || row.dataset.status === status) {
+      row.style.display = '';
+    } else {
+      row.style.display = 'none';
+    }
+  });
+  document.querySelectorAll('.filter-btn').forEach(btn => {
+    btn.style.background = 'transparent';
+    btn.style.color = '#888';
+    btn.style.borderColor = '#2a2a2a';
+  });
+  event.target.style.background = '#cc0000';
+  event.target.style.color = '#fff';
+  event.target.style.borderColor = '#cc0000';
+}
+</script>
+</body>
+</html>

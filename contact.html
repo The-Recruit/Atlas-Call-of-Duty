@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — ATLAS Corporation</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:wght@300;400;600;700;900&family=Rajdhani:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="scan-overlay"></div>
+<div class="noise-overlay"></div>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="logo-wrap">
+      <img src="atlas-logo.png" alt="ATLAS Corporation" class="site-logo">
+      <div class="logo-text">
+        <span class="logo-name">ATLAS</span>
+        <span class="logo-sub">CORPORATION</span>
+      </div>
+    </a>
+    <nav class="main-nav">
+      <a href="index.html" class="nav-link">HOME</a>
+      <a href="about.html" class="nav-link">ABOUT</a>
+      <a href="services.html" class="nav-link">SERVICES</a>
+      <a href="operations.html" class="nav-link">OPERATIONS</a>
+      <a href="contracts.html" class="nav-link">CONTRACTS</a>
+      <a href="contact.html" class="nav-link nav-cta active">ENGAGE</a>
+    </nav>
+    <button class="mobile-menu-btn" onclick="toggleMenu()">&#9776;</button>
+  </div>
+  <div class="mobile-nav" id="mobileNav">
+    <a href="index.html" class="nav-link">HOME</a>
+    <a href="about.html" class="nav-link">ABOUT</a>
+    <a href="services.html" class="nav-link">SERVICES</a>
+    <a href="operations.html" class="nav-link">OPERATIONS</a>
+    <a href="contracts.html" class="nav-link">CONTRACTS</a>
+    <a href="contact.html" class="nav-link">ENGAGE</a>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero">
+    <div class="page-hero-inner">
+      <div class="page-hero-tag">// INITIATE CONTACT</div>
+      <h1 class="page-hero-title">ENGAGE<br>ATLAS</h1>
+      <p class="page-hero-sub">Our operations division maintains 24/7 availability. All inquiries are handled under strict confidentiality protocols.</p>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h3>INITIATE FIRST CONTACT</h3>
+          <p>ATLAS Corporation maintains secure communication channels across all major international nodes. All initial inquiries are screened by our contracts division and routed to the appropriate operational specialist.</p>
+          <p>For emergency operational support requests, use our 24/7 secure line. For general contracting inquiries, complete the adjacent form and expect a response within 48 hours from a verified ATLAS liaison.</p>
+
+          <div style="margin: 40px 0;">
+            <div class="contact-detail">
+              <div class="contact-detail-icon">▲</div>
+              <div class="contact-detail-text">
+                <h4>GLOBAL HEADQUARTERS</h4>
+                <p>Atlas Complex, New Baghdad, Iraq</p>
+                <p style="font-size: 13px; color: #666;">Zone 4, Sector 12 — Restricted Access</p>
+              </div>
+            </div>
+            <div class="contact-detail">
+              <div class="contact-detail-icon">▲</div>
+              <div class="contact-detail-text">
+                <h4>ADMINISTRATIVE OFFICE</h4>
+                <p>Atlas Tower, 52nd Floor, New York City, USA</p>
+              </div>
+            </div>
+            <div class="contact-detail">
+              <div class="contact-detail-icon">▲</div>
+              <div class="contact-detail-text">
+                <h4>SECURE EMAIL</h4>
+                <p>ops@atlascorporation.mil</p>
+                <p style="font-size: 13px; color: #666;">PGP encrypted communications preferred</p>
+              </div>
+            </div>
+            <div class="contact-detail">
+              <div class="contact-detail-icon">▲</div>
+              <div class="contact-detail-text">
+                <h4>24/7 OPERATIONS LINE</h4>
+                <p>+1-800-ATLAS-00</p>
+                <p style="font-size: 13px; color: #666;">For emergency operational requirements only</p>
+              </div>
+            </div>
+            <div class="contact-detail">
+              <div class="contact-detail-icon">▲</div>
+              <div class="contact-detail-text">
+                <h4>SECURE FAX</h4>
+                <p>+1-800-ATLAS-01 (Encrypted)</p>
+                <p style="font-size: 13px; color: #666;">Classified document transmission</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- CLASSIFICATION NOTICE -->
+          <div style="background: rgba(204,0,0,0.08); border: 1px solid rgba(204,0,0,0.3); border-left: 3px solid #cc0000; padding: 20px;">
+            <div style="font-family: 'Barlow Condensed', sans-serif; font-size: 11px; letter-spacing: 0.3em; color: #cc0000; font-weight: 700; margin-bottom: 8px;">⚠ SECURITY NOTICE</div>
+            <p style="font-size: 13px; color: #888;">All communications with ATLAS Corporation are subject to monitoring and retention under our security protocols. By initiating contact, you acknowledge that your inquiry may be subject to background verification prior to response.</p>
+          </div>
+        </div>
+
+        <div class="contact-form">
+          <h3>REQUEST BRIEFING</h3>
+          <form id="atlasContactForm">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+              <div class="form-group">
+                <label>FIRST NAME</label>
+                <input type="text" placeholder="Enter first name" required>
+              </div>
+              <div class="form-group">
+                <label>LAST NAME</label>
+                <input type="text" placeholder="Enter last name" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>ORGANIZATION / NATION</label>
+              <input type="text" placeholder="Government, corporation, or organization" required>
+            </div>
+            <div class="form-group">
+              <label>SECURE EMAIL</label>
+              <input type="email" placeholder="official@domain.gov" required>
+            </div>
+            <div class="form-group">
+              <label>SERVICE REQUIRED</label>
+              <select>
+                <option value="">Select service category</option>
+                <option>Private Military Operations</option>
+                <option>Infrastructure Contracting</option>
+                <option>Intelligence Services</option>
+                <option>Global Logistics</option>
+                <option>Advanced Technology</option>
+                <option>Multi-Domain Contract</option>
+                <option>Other — Specify in message</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>REGION OF OPERATION</label>
+              <select>
+                <option value="">Select region</option>
+                <option>Middle East</option>
+                <option>Africa</option>
+                <option>Eastern Europe</option>
+                <option>Southeast Asia</option>
+                <option>South Asia</option>
+                <option>Central Asia</option>
+                <option>South America</option>
+                <option>North America</option>
+                <option>Western Europe</option>
+                <option>Multiple Regions</option>
+                <option>Classified</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>ESTIMATED CONTRACT VALUE</label>
+              <select>
+                <option value="">Select estimated value</option>
+                <option>Under $100M</option>
+                <option>$100M — $1B</option>
+                <option>$1B — $10B</option>
+                <option>$10B — $50B</option>
+                <option>$50B+</option>
+                <option>Classified / Undisclosed</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>OPERATIONAL BRIEF</label>
+              <textarea placeholder="Describe your operational requirements. Classified details should be submitted via secure channel." style="min-height: 140px;"></textarea>
+            </div>
+            <div style="margin-bottom: 20px; display: flex; align-items: flex-start; gap: 12px;">
+              <input type="checkbox" id="securityAck" style="width: auto; margin-top: 4px;" required>
+              <label for="securityAck" style="font-family: 'Barlow Condensed', sans-serif; font-size: 12px; letter-spacing: 0.1em; color: #888; cursor: pointer;">I acknowledge that this communication may be subject to security screening and that I am authorized to make this inquiry on behalf of my organization.</label>
+            </div>
+            <button type="submit" class="btn-primary form-submit">SUBMIT BRIEFING REQUEST</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GLOBAL OFFICES -->
+  <section class="content-section dark">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">// REGIONAL OFFICES</div>
+        <h2 class="section-title">GLOBAL PRESENCE</h2>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: #2a2a2a; margin-top: 40px;">
+        <div style="background: #000; padding: 32px 28px;">
+          <div style="font-family: 'Barlow Condensed', sans-serif; font-size: 11px; letter-spacing: 0.3em; color: #cc0000; font-weight: 700; margin-bottom: 12px;">GLOBAL HQ</div>
+          <h3 style="font-size: 20px; margin-bottom: 8px;">NEW BAGHDAD</h3>
+          <p style="font-size: 14px; color: #888; margin-bottom: 8px;">Atlas Complex, Zone 4, Sector 12</p>
+          <p style="font-size: 13px; color: #555;">Primary operational command and military headquarters. Restricted access facility.</p>
+        </div>
+        <div style="background: #000; padding: 32px 28px;">
+          <div style="font-family: 'Barlow Condensed', sans-serif; font-size: 11px; letter-spacing: 0.3em; color: #cc0000; font-weight: 700; margin-bottom: 12px;">NORTH AMERICA</div>
+          <h3 style="font-size: 20px; margin-bottom: 8px;">NEW YORK CITY</h3>
+          <p style="font-size: 14px; color: #888; margin-bottom: 8px;">Atlas Tower, 52nd Floor, Manhattan</p>
+          <p style="font-size: 13px; color: #555;">Administrative, legal, and financial operations center.</p>
+        </div>
+        <div style="background: #000; padding: 32px 28px;">
+          <div style="font-family: 'Barlow Condensed', sans-serif; font-size: 11px; letter-spacing: 0.3em; color: #cc0000; font-weight: 700; margin-bottom: 12px;">EUROPE</div>
+          <h3 style="font-size: 20px; margin-bottom: 8px;">GENEVA</h3>
+          <p style="font-size: 14px; color: #888; margin-bottom: 8px;">ATLAS European Liaison Office</p>
+          <p style="font-size: 13px; color: #555;">European contracts, intelligence coordination, and diplomatic liaison.</p>
+        </div>
+        <div style="background: #000; padding: 32px 28px;">
+          <div style="font-family: 'Barlow Condensed', sans-serif; font-size: 11px; letter-spacing: 0.3em; color: #cc0000; font-weight: 700; margin-bottom: 12px;">AFRICA</div>
+          <h3 style="font-size: 20px; margin-bottom: 8px;">NAIROBI</h3>
+          <p style="font-size: 14px; color: #888; margin-bottom: 8px;">ATLAS Africa Regional Command</p>
+          <p style="font-size: 13px; color: #555;">Coordination hub for all African theater operations and contracts.</p>
+        </div>
+        <div style="background: #000; padding: 32px 28px;">
+          <div style="font-family: 'Barlow Condensed', sans-serif; font-size: 11px; letter-spacing: 0.3em; color: #cc0000; font-weight: 700; margin-bottom: 12px;">ASIA-PACIFIC</div>
+          <h3 style="font-size: 20px; margin-bottom: 8px;">SINGAPORE</h3>
+          <p style="font-size: 14px; color: #888; margin-bottom: 8px;">ATLAS APAC Headquarters</p>
+          <p style="font-size: 13px; color: #555;">Southeast Asia, Pacific, and logistics hub operations center.</p>
+        </div>
+        <div style="background: #000; padding: 32px 28px;">
+          <div style="font-family: 'Barlow Condensed', sans-serif; font-size: 11px; letter-spacing: 0.3em; color: #cc0000; font-weight: 700; margin-bottom: 12px;">SOUTH AMERICA</div>
+          <h3 style="font-size: 20px; margin-bottom: 8px;">BOGOTÁ</h3>
+          <p style="font-size: 14px; color: #888; margin-bottom: 8px;">ATLAS Americas South</p>
+          <p style="font-size: 13px; color: #555;">Regional command for South and Central American contracts and operations.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="atlas-logo.png" alt="ATLAS" class="footer-logo">
+        <p>ATLAS Corporation — Private Military & Infrastructure Conglomerate</p>
+        <p class="footer-classify">CLASSIFICATION: RESTRICTED</p>
+      </div>
+      <div class="footer-links">
+        <h4>NAVIGATION</h4>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="operations.html">Operations</a>
+        <a href="contracts.html">Contracts</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-links">
+        <h4>SERVICES</h4>
+        <a href="services.html#pmc">Private Military</a>
+        <a href="services.html#infrastructure">Infrastructure</a>
+        <a href="services.html#intelligence">Intelligence</a>
+        <a href="services.html#logistics">Logistics</a>
+      </div>
+      <div class="footer-contact">
+        <h4>CONTACT</h4>
+        <p>ATLAS HQ — New Baghdad, Iraq</p>
+        <p>ops@atlascorporation.mil</p>
+        <p>SECURE LINE: +1-800-ATLAS-00</p>
+      </div>
+    </div>
+    <div class="footer-bar">
+      <span>© 2054 ATLAS Corporation. All operations classified. All rights reserved.</span>
+      <span class="footer-right">STRENGTH · ORDER · SUPERIORITY</span>
+    </div>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+<script>
+document.getElementById('atlasContactForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+  const btn = this.querySelector('button[type="submit"]');
+  btn.textContent = 'TRANSMISSION RECEIVED';
+  btn.style.background = '#44cc88';
+  btn.disabled = true;
+  setTimeout(() => {
+    btn.textContent = 'REQUEST LOGGED — EXPECT RESPONSE WITHIN 48H';
+    btn.style.fontSize = '11px';
+  }, 1500);
+});
+</script>
+</body>
+</html>

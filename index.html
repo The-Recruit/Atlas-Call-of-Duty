@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ATLAS Corporation — Strength. Order. Superiority.</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:wght@300;400;600;700;900&family=Rajdhani:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="scan-overlay"></div>
+<div class="noise-overlay"></div>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="logo-wrap">
+      <img src="atlas-logo.png" alt="ATLAS Corporation" class="site-logo">
+      <div class="logo-text">
+        <span class="logo-name">ATLAS</span>
+        <span class="logo-sub">CORPORATION</span>
+      </div>
+    </a>
+    <nav class="main-nav">
+      <a href="index.html" class="nav-link active">HOME</a>
+      <a href="about.html" class="nav-link">ABOUT</a>
+      <a href="services.html" class="nav-link">SERVICES</a>
+      <a href="operations.html" class="nav-link">OPERATIONS</a>
+      <a href="contracts.html" class="nav-link">CONTRACTS</a>
+      <a href="contact.html" class="nav-link nav-cta">ENGAGE</a>
+    </nav>
+    <button class="mobile-menu-btn" onclick="toggleMenu()">&#9776;</button>
+  </div>
+  <div class="mobile-nav" id="mobileNav">
+    <a href="index.html" class="nav-link">HOME</a>
+    <a href="about.html" class="nav-link">ABOUT</a>
+    <a href="services.html" class="nav-link">SERVICES</a>
+    <a href="operations.html" class="nav-link">OPERATIONS</a>
+    <a href="contracts.html" class="nav-link">CONTRACTS</a>
+    <a href="contact.html" class="nav-link">ENGAGE</a>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg"><div class="hero-grid"></div></div>
+    <div class="hero-content">
+      <div class="hero-tag">CLASSIFIED // TIER ONE PRIVATE MILITARY CONGLOMERATE</div>
+      <h1 class="hero-title">
+        <span class="title-line">WE ARE</span>
+        <span class="title-line accent">ATLAS</span>
+      </h1>
+      <p class="hero-sub">Strength. Order. Superiority.</p>
+      <p class="hero-desc">The world's foremost private military and infrastructure conglomerate. Where governments hesitate, ATLAS acts. Where systems fail, ATLAS builds. Where order collapses, ATLAS restores.</p>
+      <div class="hero-actions">
+        <a href="about.html" class="btn-primary">LEARN MORE</a>
+        <a href="contact.html" class="btn-secondary">REQUEST BRIEFING</a>
+      </div>
+    </div>
+    <div class="hero-stats">
+      <div class="stat-item"><span class="stat-num" data-target="185">000</span><span class="stat-label">ACTIVE PERSONNEL</span></div>
+      <div class="stat-divider"></div>
+      <div class="stat-item"><span class="stat-num" data-target="49">00</span><span class="stat-label">NATIONS CONTRACTED</span></div>
+      <div class="stat-divider"></div>
+      <div class="stat-item"><span class="stat-num" data-target="97">00</span><span class="stat-label">CONTRACT SUCCESS RATE %</span></div>
+    </div>
+    <div class="scroll-indicator"><span>SCROLL</span><div class="scroll-line"></div></div>
+  </section>
+
+  <!-- INTRO -->
+  <section class="intro-section">
+    <div class="container">
+      <div class="intro-grid">
+        <div class="intro-text">
+          <div class="section-tag">// WHO WE ARE</div>
+          <h2 class="section-title">THE NEW WORLD ORDER REQUIRES A NEW KIND OF FORCE</h2>
+          <p>Founded by Jonathan Irons, ATLAS Corporation emerged from the chaos of the 21st century as the definitive solution to global instability. Where traditional military structures are constrained by politics and bureaucracy, ATLAS operates with absolute precision and unmatched capability.</p>
+          <p>We are not mercenaries. We are architects of order.</p>
+          <a href="about.html" class="btn-inline">READ OUR HISTORY →</a>
+        </div>
+        <div class="intro-visual">
+          <div class="visual-frame">
+            <img src="atlas-logo.png" alt="ATLAS" class="intro-logo-img">
+            <div class="frame-corner tl"></div><div class="frame-corner tr"></div>
+            <div class="frame-corner bl"></div><div class="frame-corner br"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES OVERVIEW -->
+  <section class="services-overview">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">// CAPABILITIES</div>
+        <h2 class="section-title">WHAT WE DELIVER</h2>
+      </div>
+      <div class="services-grid">
+        <a href="services.html#pmc" class="service-card">
+          <div class="service-icon">⬡</div><h3>PRIVATE MILITARY</h3>
+          <p>Elite combat forces, tactical operations, and security solutions beyond conventional military reach.</p>
+          <span class="card-link">VIEW DETAILS →</span>
+        </a>
+        <a href="services.html#infrastructure" class="service-card">
+          <div class="service-icon">⬡</div><h3>INFRASTRUCTURE</h3>
+          <p>Rapid construction, critical systems rebuilding, and post-conflict urban restoration at scale.</p>
+          <span class="card-link">VIEW DETAILS →</span>
+        </a>
+        <a href="services.html#intelligence" class="service-card">
+          <div class="service-icon">⬡</div><h3>INTELLIGENCE</h3>
+          <p>Advanced surveillance, threat assessment, and actionable intelligence operations worldwide.</p>
+          <span class="card-link">VIEW DETAILS →</span>
+        </a>
+        <a href="services.html#logistics" class="service-card">
+          <div class="service-icon">⬡</div><h3>LOGISTICS</h3>
+          <p>Global supply chain management, airlift operations, and mission-critical resource deployment.</p>
+          <span class="card-link">VIEW DETAILS →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════════════ -->
+  <!--  MAP SECTION                                                    -->
+  <!-- ═══════════════════════════════════════════════════════════════ -->
+  <section class="map-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">// GLOBAL PRESENCE</div>
+        <h2 class="section-title">SUCCESSFUL CONTRACTS</h2>
+        <p class="section-desc">ATLAS operates across six continents. Our reach is global. Our response is immediate.</p>
+      </div>
+
+      <div class="map-container">
+
+        <!-- LEGEND -->
+        <div class="map-legend">
+          <div class="legend-item"><span class="legend-dot pmc"></span>Modern Warfare</div>
+          <div class="legend-item"><span class="legend-dot blackops"></span>Black Ops</div>
+          <div class="legend-item"><span class="legend-dot multi"></span>3+ Series</div>
+          <div class="legend-item"><span class="legend-dot ghosts"></span>Ghosts</div>
+          <div class="legend-item"><span class="legend-dot bomw"></span>BO + MW</div>
+          <div class="legend-item"><span class="legend-dot ww2"></span>World War 2</div>
+          <div class="legend-item"><span class="legend-dot ww2bo"></span>WW2 + BO</div>
+          <div class="legend-item"><span class="legend-dot mwghosts"></span>MW + Ghosts</div>
+        </div>
+
+        <!-- MAP WRAPPER: image bg + SVG dot overlay, same aspect ratio 1531:980 -->
+        <div class="world-map-wrap">
+          <img src="world-map-bg.png" alt="ATLAS World Map" class="world-map-img">
+
+          <!-- SVG overlay perfectly sized to image (viewBox = image pixel dims) -->
+          <svg class="world-map-svg-overlay"
+               viewBox="0 0 1531 980"
+               xmlns="http://www.w3.org/2000/svg"
+               preserveAspectRatio="xMidYMid meet">
+
+            <!-- ── PULSE RINGS (drawn behind dots) ─────────────────────── -->
+            <!-- Each active dot gets a pulsing ring via CSS animation -->
+
+            <!-- ══════════════════════════════════════════════════════════ -->
+            <!--  CONTRACT DOTS — pixel coords sampled directly from map    -->
+            <!--  All positions verified against reference image            -->
+            <!-- ══════════════════════════════════════════════════════════ -->
+
+            <!-- ── Modern Warfare (Blue) ── -->
+            <g class="dot-group pmc">
+              <circle class="dot-ring" cx="111" cy="279" r="10"/>
+              <circle class="dot pmc" cx="111" cy="279" r="6" title="Alaska — Modern Warfare"/>
+            </g>
+            <g class="dot-group pmc">
+              <circle class="dot-ring" cx="927" cy="413" r="10"/>
+              <circle class="dot pmc" cx="927" cy="413" r="6" title="Iraq — Modern Warfare"/>
+            </g>
+            <g class="dot-group pmc">
+              <circle class="dot-ring" cx="943" cy="493" r="10"/>
+              <circle class="dot pmc" cx="943" cy="493" r="6" title="Somalia — Modern Warfare"/>
+            </g>
+            <g class="dot-group pmc">
+              <circle class="dot-ring" cx="962" cy="457" r="10"/>
+              <circle class="dot pmc" cx="962" cy="457" r="6" title="Eritrea/Djibouti — Modern Warfare"/>
+            </g>
+            <g class="dot-group pmc">
+              <circle class="dot-ring" cx="933" cy="472" r="10"/>
+              <circle class="dot pmc" cx="933" cy="472" r="6" title="Yemen — Modern Warfare"/>
+            </g>
+            <g class="dot-group pmc">
+              <circle class="dot-ring" cx="927" cy="445" r="10"/>
+              <circle class="dot pmc" cx="927" cy="445" r="6" title="Saudi Arabia — Modern Warfare"/>
+            </g>
+
+            <!-- ── Black Ops (Dark Brown-Red) ── -->
+            <g class="dot-group blackops">
+              <circle class="dot-ring" cx="235" cy="264" r="10"/>
+              <circle class="dot blackops" cx="235" cy="264" r="6" title="Northwest Canada — Black Ops"/>
+            </g>
+            <g class="dot-group blackops">
+              <circle class="dot-ring" cx="860" cy="380" r="10"/>
+              <circle class="dot blackops" cx="860" cy="380" r="6" title="Egypt — Black Ops"/>
+            </g>
+            <g class="dot-group blackops">
+              <circle class="dot-ring" cx="892" cy="452" r="10"/>
+              <circle class="dot blackops" cx="892" cy="452" r="6" title="Sudan — Black Ops"/>
+            </g>
+            <g class="dot-group blackops">
+              <circle class="dot-ring" cx="851" cy="396" r="10"/>
+              <circle class="dot blackops" cx="851" cy="396" r="6" title="Jordan/Israel — Black Ops"/>
+            </g>
+            <g class="dot-group blackops">
+              <circle class="dot-ring" cx="806" cy="609" r="10"/>
+              <circle class="dot blackops" cx="806" cy="609" r="6" title="Namibia — Black Ops"/>
+            </g>
+            <g class="dot-group blackops">
+              <circle class="dot-ring" cx="916" cy="497" r="10"/>
+              <circle class="dot blackops" cx="916" cy="497" r="6" title="Kenya — Black Ops"/>
+            </g>
+            <g class="dot-group blackops">
+              <circle class="dot-ring" cx="1044" cy="387" r="10"/>
+              <circle class="dot blackops" cx="1044" cy="387" r="6" title="Afghanistan — Black Ops"/>
+            </g>
+            <g class="dot-group blackops">
+              <circle class="dot-ring" cx="1057" cy="394" r="10"/>
+              <circle class="dot blackops" cx="1057" cy="394" r="6" title="Pakistan — Black Ops"/>
+            </g>
+            <g class="dot-group blackops">
+              <circle class="dot-ring" cx="1178" cy="454" r="10"/>
+              <circle class="dot blackops" cx="1178" cy="454" r="6" title="Thailand — Black Ops"/>
+            </g>
+            <g class="dot-group blackops">
+              <circle class="dot-ring" cx="1255" cy="505" r="10"/>
+              <circle class="dot blackops" cx="1255" cy="505" r="6" title="Indonesia (Kalimantan) — Black Ops"/>
+            </g>
+
+            <!-- ── 3+ Series (Teal) ── -->
+            <g class="dot-group multi">
+              <circle class="dot-ring" cx="1048" cy="253" r="12"/>
+              <circle class="dot multi" cx="1048" cy="253" r="7" title="Russia (West) — 3+ Series"/>
+            </g>
+            <g class="dot-group multi">
+              <circle class="dot-ring" cx="1356" cy="261" r="12"/>
+              <circle class="dot multi" cx="1356" cy="261" r="7" title="Russia (East) — 3+ Series"/>
+            </g>
+            <g class="dot-group multi">
+              <circle class="dot-ring" cx="1278" cy="338" r="10"/>
+              <circle class="dot multi" cx="1278" cy="338" r="6" title="Mongolia — 3+ Series"/>
+            </g>
+            <g class="dot-group multi">
+              <circle class="dot-ring" cx="1371" cy="338" r="10"/>
+              <circle class="dot multi" cx="1371" cy="338" r="6" title="Japan — 3+ Series"/>
+            </g>
+            <g class="dot-group multi">
+              <circle class="dot-ring" cx="942" cy="349" r="8"/>
+              <circle class="dot multi" cx="942" cy="349" r="5" title="Georgia — 3+ Series"/>
+            </g>
+            <g class="dot-group multi">
+              <circle class="dot-ring" cx="954" cy="364" r="8"/>
+              <circle class="dot multi" cx="954" cy="364" r="5" title="Azerbaijan/Armenia — 3+ Series"/>
+            </g>
+            <g class="dot-group multi">
+              <circle class="dot-ring" cx="1077" cy="337" r="10"/>
+              <circle class="dot multi" cx="1077" cy="337" r="6" title="Kazakhstan — 3+ Series"/>
+            </g>
+
+            <!-- ── Ghosts / South America (Purple) ── -->
+            <g class="dot-group ghosts">
+              <circle class="dot-ring" cx="467" cy="570" r="10"/>
+              <circle class="dot ghosts" cx="467" cy="570" r="6" title="Brazil — Ghosts"/>
+            </g>
+            <g class="dot-group ghosts">
+              <circle class="dot-ring" cx="429" cy="579" r="10"/>
+              <circle class="dot ghosts" cx="429" cy="579" r="6" title="Bolivia — Ghosts"/>
+            </g>
+            <g class="dot-group ghosts">
+              <circle class="dot-ring" cx="447" cy="593" r="10"/>
+              <circle class="dot ghosts" cx="447" cy="593" r="6" title="Paraguay — Ghosts"/>
+            </g>
+            <g class="dot-group ghosts">
+              <circle class="dot-ring" cx="454" cy="617" r="10"/>
+              <circle class="dot ghosts" cx="454" cy="617" r="6" title="Uruguay — Ghosts"/>
+            </g>
+            <g class="dot-group ghosts">
+              <circle class="dot-ring" cx="396" cy="640" r="10"/>
+              <circle class="dot ghosts" cx="396" cy="640" r="6" title="Chile — Ghosts"/>
+            </g>
+            <g class="dot-group ghosts">
+              <circle class="dot-ring" cx="437" cy="655" r="10"/>
+              <circle class="dot ghosts" cx="437" cy="655" r="6" title="Argentina — Ghosts"/>
+            </g>
+
+            <!-- ── BO + MW (Maroon) ── -->
+            <g class="dot-group bomw">
+              <circle class="dot-ring" cx="1104" cy="432" r="10"/>
+              <circle class="dot bomw" cx="1104" cy="432" r="6" title="India (NW) — BO+MW"/>
+            </g>
+            <g class="dot-group bomw">
+              <circle class="dot-ring" cx="1129" cy="478" r="10"/>
+              <circle class="dot bomw" cx="1129" cy="478" r="6" title="India (South) — BO+MW"/>
+            </g>
+            <g class="dot-group bomw">
+              <circle class="dot-ring" cx="1009" cy="364" r="10"/>
+              <circle class="dot bomw" cx="1009" cy="364" r="6" title="Turkmenistan — BO+MW"/>
+            </g>
+            <g class="dot-group bomw">
+              <circle class="dot-ring" cx="1032" cy="352" r="10"/>
+              <circle class="dot bomw" cx="1032" cy="352" r="6" title="Uzbekistan — BO+MW"/>
+            </g>
+            <g class="dot-group bomw">
+              <circle class="dot-ring" cx="1082" cy="352" r="10"/>
+              <circle class="dot bomw" cx="1082" cy="352" r="6" title="Tajikistan/Kyrgyzstan — BO+MW"/>
+            </g>
+            <g class="dot-group bomw">
+              <circle class="dot-ring" cx="1129" cy="489" r="8"/>
+              <circle class="dot bomw" cx="1129" cy="489" r="5" title="Sri Lanka — BO+MW"/>
+            </g>
+            <g class="dot-group bomw">
+              <circle class="dot-ring" cx="1139" cy="344" r="10"/>
+              <circle class="dot bomw" cx="1139" cy="344" r="6" title="China (Xinjiang) — BO+MW"/>
+            </g>
+            <g class="dot-group bomw">
+              <circle class="dot-ring" cx="1215" cy="482" r="8"/>
+              <circle class="dot bomw" cx="1215" cy="482" r="5" title="Malaysia — BO+MW"/>
+            </g>
+            <g class="dot-group bomw">
+              <circle class="dot-ring" cx="1225" cy="424" r="10"/>
+              <circle class="dot bomw" cx="1225" cy="424" r="6" title="Laos / NE Thailand — BO+MW"/>
+            </g>
+            <g class="dot-group bomw">
+              <circle class="dot-ring" cx="786" cy="252" r="10"/>
+              <circle class="dot bomw" cx="786" cy="252" r="6" title="Norway — BO+MW"/>
+            </g>
+
+            <!-- ── World War 2 (Gold/Yellow) ── -->
+            <g class="dot-group ww2">
+              <circle class="dot-ring" cx="769" cy="281" r="8"/>
+              <circle class="dot ww2" cx="769" cy="281" r="5" title="Denmark — WW2"/>
+            </g>
+            <g class="dot-group ww2">
+              <circle class="dot-ring" cx="793" cy="299" r="8"/>
+              <circle class="dot ww2" cx="793" cy="299" r="5" title="Hungary/Slovakia — WW2"/>
+            </g>
+            <g class="dot-group ww2">
+              <circle class="dot-ring" cx="773" cy="309" r="8"/>
+              <circle class="dot ww2" cx="773" cy="309" r="5" title="Slovenia/Croatia — WW2"/>
+            </g>
+            <g class="dot-group ww2">
+              <circle class="dot-ring" cx="784" cy="319" r="8"/>
+              <circle class="dot ww2" cx="784" cy="319" r="5" title="Bosnia — WW2"/>
+            </g>
+            <g class="dot-group ww2">
+              <circle class="dot-ring" cx="798" cy="316" r="8"/>
+              <circle class="dot ww2" cx="798" cy="316" r="5" title="Serbia — WW2"/>
+            </g>
+            <g class="dot-group ww2">
+              <circle class="dot-ring" cx="803" cy="329" r="8"/>
+              <circle class="dot ww2" cx="803" cy="329" r="5" title="N Macedonia — WW2"/>
+            </g>
+            <g class="dot-group ww2">
+              <circle class="dot-ring" cx="759" cy="374" r="10"/>
+              <circle class="dot ww2" cx="759" cy="374" r="6" title="Tunisia — WW2"/>
+            </g>
+            <g class="dot-group ww2">
+              <circle class="dot-ring" cx="846" cy="467" r="10"/>
+              <circle class="dot ww2" cx="846" cy="467" r="6" title="Chad — WW2"/>
+            </g>
+            <g class="dot-group ww2">
+              <circle class="dot-ring" cx="800" cy="453" r="10"/>
+              <circle class="dot ww2" cx="800" cy="453" r="6" title="Niger — WW2"/>
+            </g>
+            <g class="dot-group ww2">
+              <circle class="dot-ring" cx="719" cy="453" r="10"/>
+              <circle class="dot ww2" cx="719" cy="453" r="6" title="Mali — WW2"/>
+            </g>
+            <g class="dot-group ww2">
+              <circle class="dot-ring" cx="756" cy="474" r="10"/>
+              <circle class="dot ww2" cx="756" cy="474" r="6" title="Burkina Faso — WW2"/>
+            </g>
+            <g class="dot-group ww2">
+              <circle class="dot-ring" cx="772" cy="487" r="8"/>
+              <circle class="dot ww2" cx="772" cy="487" r="5" title="Benin — WW2"/>
+            </g>
+
+            <!-- ── WW2 + BO (Orange hatched) ── -->
+            <g class="dot-group ww2bo">
+              <circle class="dot-ring" cx="813" cy="387" r="10"/>
+              <circle class="dot ww2bo" cx="813" cy="387" r="6" title="Libya — WW2+BO"/>
+            </g>
+            <g class="dot-group ww2bo">
+              <circle class="dot-ring" cx="890" cy="457" r="10"/>
+              <circle class="dot ww2bo" cx="890" cy="457" r="6" title="Sudan — WW2+BO"/>
+            </g>
+
+            <!-- ── MW + Ghosts (Grey-Purple) ── -->
+            <g class="dot-group mwghosts">
+              <circle class="dot-ring" cx="904" cy="349" r="10"/>
+              <circle class="dot mwghosts" cx="904" cy="349" r="6" title="Turkey — MW+Ghosts"/>
+            </g>
+
+          </svg>
+        </div><!-- /.world-map-wrap -->
+
+        <div class="map-footer">
+          <div class="map-stat"><span class="ms-num">49</span><span class="ms-label">NATIONS</span></div>
+          <div class="map-stat"><span class="ms-num">6</span><span class="ms-label">CONTINENTS</span></div>
+          <div class="map-stat"><span class="ms-num">312</span><span class="ms-label">CONTRACTS COMPLETED</span></div>
+        </div>
+      </div><!-- /.map-container -->
+    </div>
+  </section>
+
+  <!-- QUOTE -->
+  <section class="quote-section">
+    <div class="container">
+      <blockquote class="atlas-quote">
+        <span class="quote-mark">"</span>
+        Fifty years ago, soldiers needed a nation. Today, nations need soldiers. The world needs ATLAS.
+        <cite>— Jonathan Irons, Founder &amp; CEO, ATLAS Corporation</cite>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- FOOTER CTA -->
+  <section class="footer-cta">
+    <div class="container">
+      <div class="cta-inner">
+        <h2>READY TO ENGAGE ATLAS?</h2>
+        <p>Contact our operations division to discuss how ATLAS can secure your interests.</p>
+        <a href="contact.html" class="btn-primary large">REQUEST BRIEFING</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="atlas-logo.png" alt="ATLAS" class="footer-logo">
+        <p>ATLAS Corporation — Private Military &amp; Infrastructure Conglomerate</p>
+        <p class="footer-classify">CLASSIFICATION: RESTRICTED</p>
+      </div>
+      <div class="footer-links">
+        <h4>NAVIGATION</h4>
+        <a href="index.html">Home</a><a href="about.html">About</a>
+        <a href="services.html">Services</a><a href="operations.html">Operations</a>
+        <a href="contracts.html">Contracts</a><a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-links">
+        <h4>SERVICES</h4>
+        <a href="services.html#pmc">Private Military</a>
+        <a href="services.html#infrastructure">Infrastructure</a>
+        <a href="services.html#intelligence">Intelligence</a>
+        <a href="services.html#logistics">Logistics</a>
+      </div>
+      <div class="footer-contact">
+        <h4>CONTACT</h4>
+        <p>ATLAS HQ — New Baghdad, Iraq</p>
+        <p>ops@atlascorporation.mil</p>
+        <p>SECURE LINE: +1-800-ATLAS-00</p>
+      </div>
+    </div>
+    <div class="footer-bar">
+      <span>© 2054 ATLAS Corporation. All operations classified. All rights reserved.</span>
+      <span class="footer-right">STRENGTH · ORDER · SUPERIORITY</span>
+    </div>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>

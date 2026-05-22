@@ -99,7 +99,6 @@
             </div>
           </div>
 
-          <!-- CLASSIFICATION NOTICE -->
           <div style="background: rgba(204,0,0,0.08); border: 1px solid rgba(204,0,0,0.3); border-left: 3px solid #cc0000; padding: 20px;">
             <div style="font-family: 'Barlow Condensed', sans-serif; font-size: 11px; letter-spacing: 0.3em; color: #cc0000; font-weight: 700; margin-bottom: 8px;">⚠ SECURITY NOTICE</div>
             <p style="font-size: 13px; color: #888;">All communications with ATLAS Corporation are subject to monitoring and retention under our security protocols. By initiating contact, you acknowledge that your inquiry may be subject to background verification prior to response.</p>
@@ -112,24 +111,24 @@
             <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
               <div class="form-group">
                 <label>FIRST NAME</label>
-                <input type="text" placeholder="Enter first name" required>
+                <input type="text" name="firstName" placeholder="Enter first name" required>
               </div>
               <div class="form-group">
                 <label>LAST NAME</label>
-                <input type="text" placeholder="Enter last name" required>
+                <input type="text" name="lastName" placeholder="Enter last name" required>
               </div>
             </div>
             <div class="form-group">
               <label>ORGANIZATION / NATION</label>
-              <input type="text" placeholder="Government, corporation, or organization" required>
+              <input type="text" name="organization" placeholder="Government, corporation, or organization" required>
             </div>
             <div class="form-group">
               <label>SECURE EMAIL</label>
-              <input type="email" placeholder="official@domain.gov" required>
+              <input type="email" name="email" placeholder="official@domain.gov" required>
             </div>
             <div class="form-group">
               <label>SERVICE REQUIRED</label>
-              <select>
+              <select name="service">
                 <option value="">Select service category</option>
                 <option>Private Military Operations</option>
                 <option>Infrastructure Contracting</option>
@@ -142,7 +141,7 @@
             </div>
             <div class="form-group">
               <label>REGION OF OPERATION</label>
-              <select>
+              <select name="region">
                 <option value="">Select region</option>
                 <option>Middle East</option>
                 <option>Africa</option>
@@ -159,7 +158,7 @@
             </div>
             <div class="form-group">
               <label>ESTIMATED CONTRACT VALUE</label>
-              <select>
+              <select name="contractValue">
                 <option value="">Select estimated value</option>
                 <option>Under $100M</option>
                 <option>$100M — $1B</option>
@@ -171,10 +170,10 @@
             </div>
             <div class="form-group">
               <label>OPERATIONAL BRIEF</label>
-              <textarea placeholder="Describe your operational requirements. Classified details should be submitted via secure channel." style="min-height: 140px;"></textarea>
+              <textarea name="brief" placeholder="Describe your operational requirements. Classified details should be submitted via secure channel." style="min-height: 140px;"></textarea>
             </div>
             <div style="margin-bottom: 20px; display: flex; align-items: flex-start; gap: 12px;">
-              <input type="checkbox" id="securityAck" style="width: auto; margin-top: 4px;" required>
+              <input type="checkbox" id="securityAck" name="securityAck" style="width: auto; margin-top: 4px;" required>
               <label for="securityAck" style="font-family: 'Barlow Condensed', sans-serif; font-size: 12px; letter-spacing: 0.1em; color: #888; cursor: pointer;">I acknowledge that this communication may be subject to security screening and that I am authorized to make this inquiry on behalf of my organization.</label>
             </div>
             <button type="submit" class="btn-primary form-submit">SUBMIT BRIEFING REQUEST</button>
@@ -184,7 +183,6 @@
     </div>
   </section>
 
-  <!-- GLOBAL OFFICES -->
   <section class="content-section dark">
     <div class="container">
       <div class="section-header">
@@ -273,16 +271,41 @@
 
 <script src="main.js"></script>
 <script>
-document.getElementById('atlasContactForm').addEventListener('submit', function(e) {
+document.getElementById('atlasContactForm').addEventListener('submit', async function(e) {
   e.preventDefault();
-  const btn = this.querySelector('button[type="submit"]');
-  btn.textContent = 'TRANSMISSION RECEIVED';
-  btn.style.background = '#44cc88';
+  const form = this;
+  const btn = form.querySelector('button[type="submit"]');
+  
+  btn.textContent = 'TRANSMITTING...';
   btn.disabled = true;
-  setTimeout(() => {
-    btn.textContent = 'REQUEST LOGGED — EXPECT RESPONSE WITHIN 48H';
-    btn.style.fontSize = '11px';
-  }, 1500);
+
+  const data = new FormData(form);
+
+  try {
+    const response = await fetch('https://formspree.io/f/mredqnze', {
+      method: 'POST',
+      body: data,
+      headers: {
+        'Accept': 'application/json'
+      }
+    });
+
+    if (response.ok) {
+      btn.textContent = 'TRANSMISSION RECEIVED';
+      btn.style.background = '#44cc88';
+      form.reset();
+      setTimeout(() => {
+        btn.textContent = 'REQUEST LOGGED — EXPECT RESPONSE WITHIN 48H';
+        btn.style.fontSize = '11px';
+      }, 1500);
+    } else {
+      throw new Error('Network response error');
+    }
+  } catch (error) {
+    btn.textContent = 'TRANSMISSION FAILED. RETRY.';
+    btn.style.background = '#cc0000';
+    btn.disabled = false;
+  }
 });
 </script>
 </body>
